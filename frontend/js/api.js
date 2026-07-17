@@ -1,6 +1,6 @@
 // Base URL of the backend API.
 // In docker-compose we route this through Nginx as /api -> backend:5000
-const API_BASE = "/api";
+const API_BASE = "http://localhost:5000/api";
 
 function getToken() {
   return localStorage.getItem("token");
